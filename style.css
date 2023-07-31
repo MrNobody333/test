@@ -1,0 +1,50 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Montserrat, Arial, sans-serif;
+}
+
+.scope {
+  max-width: 1336px;
+  margin: 50px auto 0;
+  padding: 0 20px;
+}
+
+.banner {
+  min-height: 581px;
+  background: url(img/Untitled-1.jpg) no-repeat center/cover;
+}
+
+.banner__inner {
+  max-width: 895px;
+  padding: 50px 0 0 150px;
+}
+
+.banner__title {
+  margin-bottom: 60px;
+  font-size: 40px;
+  text-transform: uppercase;
+  line-height: 1.8;
+  color: #0490d7;
+}
+
+.bigbtn {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #7493EF;
+  box-shadow: 0 4px 7px rgba(125, 154, 242, 0.2), inset 0 4px 7px #A0B6F8;
+  border-radius: 46px;
+  border: none;
+  padding: 1.45rem 3rem;
+  cursor: pointer;
+}
