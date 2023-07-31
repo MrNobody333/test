@@ -5,36 +5,38 @@
 }
 
 html {
-  font-family: Montserrat, Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
 }
 
-.scope {
-  max-width: 1336px;
+.container {
+  max-width: 1376px;
   margin: 50px auto 0;
   padding: 0 20px;
 }
 
 .banner {
-  min-height: 581px;
-  background: url(img/Untitled-1.jpg) no-repeat center/cover;
+  min-height: 500px;
+  background: #e9eef2 url(img/Untitled-1.jpg) no-repeat center/cover;
 }
 
 .banner__inner {
-  max-width: 895px;
-  padding: 50px 0 0 150px;
+  max-width: 885px;
+  padding: 45px 0 0 150px;
 }
 
 .banner__title {
-  margin-bottom: 60px;
-  font-size: 40px;
-  text-transform: uppercase;
+  margin-bottom: 45px;
+  font-size: 39px;
   line-height: 1.8;
+  text-transform: uppercase;
   color: #0490d7;
 }
 
 .bigbtn {
-  font-family: 'Montserrat', Arial, sans-serif;
-  font-weight: 700;
+  padding: 1.45rem 3rem;
+  border: none;
+  border-radius: 46px;
+  font-family: 'Montserrat';
   font-size: 12px;
   line-height: 15px;
   text-align: center;
@@ -43,8 +45,168 @@ html {
   color: #FFFFFF;
   background: #7493EF;
   box-shadow: 0 4px 7px rgba(125, 154, 242, 0.2), inset 0 4px 7px #A0B6F8;
-  border-radius: 46px;
-  border: none;
-  padding: 1.45rem 3rem;
   cursor: pointer;
+}
+
+.popup {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .6);
+  transition: .2s all ease-in;
+}
+
+.popup_active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup__inner {
+  position: absolute;
+  margin-top: 50px;
+  width: 570px;
+  padding: 24px;
+  background-color: #fff;
+}
+
+.popup__content {
+  position: relative;
+}
+
+.popup-form__title {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e9cf92;
+  font-size: 18px;
+  font-weight: 600;
+  color: #13063f;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #353535;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #b9b9b9;
+  line-height: 1.8;
+  transition: .1s ease-in;
+}
+
+input:focus {
+  border: 1px solid rgba(0, 170, 255, 0.75);
+  outline: none;
+  -webkit-box-shadow: 0 0 8px 1px rgba(0, 170, 255, 0.4);
+  box-shadow: 0 0 8px 1px rgba(0, 170, 255, 0.4);
+}
+
+textarea {
+  line-height: 24px;
+  resize: none;
+}
+
+textarea:focus {
+  border: 1px solid rgba(0, 170, 255, 0.75);
+  outline: none;
+  -webkit-box-shadow: 0 0 8px 1px rgba(0, 170, 255, 0.4);
+  box-shadow: 0 0 8px 1px rgba(0, 170, 255, 0.4);
+}
+
+.btn-primary {
+  position: relative;
+  margin: 10px 0;
+  padding: 14px 60px;
+  border: none;
+  font-family: 'Montserrat';
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: #e9cf92;
+  color: #fff;
+  transition: .3s background-color;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #c9ac6a;
+}
+
+.btn-primary::before,
+.btn-primary::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  width: 36px;
+  margin-top: -1px;
+  background: #fff;
+}
+
+.btn-primary::before {
+  left: 15px;
+}
+
+.btn-primary::after {
+  right: 15px;
+}
+
+.btn-close {
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  padding: 14px 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: .3s all;
+  cursor: pointer;
+}
+
+.btn-close::before {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 2px;
+  background-color: #969696;
+  transform-origin: 9px 1px;
+  transform: rotate(-45deg);
+  transition: .3s all;
+}
+
+.btn-close::after {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 2px;
+  background-color: #969696;
+  transform-origin: 9px 1px;
+  transform: rotate(45deg);
+  transition: .3s all;
+}
+
+.btn-close:hover {
+  background-color: #f0f0f0;
+}
+
+.btn-close:hover::before,
+.btn-close:hover::after {
+  background-color: #5e5e5e;
+}
+
+.btn-close:active {
+  border: 1px dashed #5e5e5e;
 }

@@ -4,18 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="scope">
+
+    <div class="container">
       <div class="banner">
         <div class="banner__inner">
-          <h1 class="banner__title">«KATRIS» — деревянные жалюзи под размер окна + разработка дизайна + монтаж по доступной цене
-          </h1>
-          <button type="button" class="bigbtn header__call-order">Рассчитать стоимость</button>
+          <h1 class="banner__title">«KATRIS» — деревянные жалюзи под размер окна + разработка дизайна + монтаж по доступной цене</h1>
+          <button type="button" class="bigbtn">Рассчитать стоимость</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup">
+      <div class="popup__inner">
+        <div class="popup__content">
+          <div class="popup-form__title">Вызов дизайнера </div>
+          <form name="form" class="form" action="./" method="post" enctype="multipart/form-data" role="form">
+            <label for="fio">Имя<sup><font color="red">*</font></sup></label>
+            <input id="fio" type="text" name="fio" placeholder="" size="50" value="" required>
+            <label for="phone">Телефон<sup><font color="red">*</font></sup></label>
+            <input id="phone" type="text" name="phone" placeholder="" size="50" value="" required>
+            <label for="email">E-mail</label>
+            <input id="email" type="text" name="email" placeholder="" size="50" value="" required>
+            <label for="address">Адрес</label>
+            <input id="address" type="text" name="address" placeholder="" size="50" value="" required>
+            <label for="comment">Комментарий</label>
+            <textarea name="comment" cols="0" rows="0" wrap="soft" class="form-control"></textarea>
+            <button class="btn-primary" type="submit" name="Submit" value="Отправить">Отправить</button>
+            <button class="btn-close" type="button"></button>
+          </form>
         </div>
       </div>
     </div>
     
+  <script>
+    const popup = document.querySelector('.popup');
+    const btn = document.querySelector('.bigbtn');
+    const btnClose = document.querySelector('.btn-close');
+
+    btn.addEventListener('click', () => {
+      popup.classList.add('popup_active');
+    });
+
+    document.addEventListener('click', e => {
+      if (e.target !== btn && e.target == popup || e.target == btnClose) {
+        popup.classList.remove('popup_active');
+      }
+    });
+  </script>
   </body>
 </html>
