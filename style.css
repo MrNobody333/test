@@ -8,20 +8,17 @@ html {
   font-family: 'Open Sans', Arial, sans-serif;
 }
 
-body {
-  background-color: #e9eef2;
-}
-
 /* баннер с анонсом и формой обратной связи для замера заказа */
 .container {
   max-width: 1376px;
-  margin: auto 0;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
 .banner {
   min-height: 500px;
-  background: #e9eef2 url(img/banner/Untitled-1.jpg) no-repeat center/cover;
+  margin: 50px 0;
+  background: #e9eef2 url(img/banner/bg.jpg) no-repeat center/cover;
 }
 
 .banner__inner {
@@ -32,6 +29,7 @@ body {
 .banner__title {
   margin-bottom: 45px;
   font-size: 39px;
+  font-weight: 600;
   line-height: 1.8;
   text-transform: uppercase;
   color: #0490d7;
@@ -218,10 +216,8 @@ textarea:focus {
 }
 
 /* блок «Виды деревянных жалюзи» с формами заказа и ценой */
-.container {
-  max-width: 1376px;
-  margin: 50px auto 0;
-  padding: 0 20px;
+.blinds {
+  margin-bottom: 50px;
 }
 
 .blinds__content {
@@ -231,6 +227,7 @@ textarea:focus {
 
 .blinds__title {
   font-size: 39px;
+  font-weight: 600;
   line-height: 1.8;
   color: #0490d7;
 }
@@ -298,3 +295,5 @@ textarea:focus {
 .bigbtn_mod {
   padding: 1.15rem 1.5rem;
 }
+
+/* блок «Цветовая гамма» */
