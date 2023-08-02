@@ -489,3 +489,8 @@ textarea:focus {
 .taking-measurements__title {
   font-size: 14px;
 }
+
+/* блок «Правильный замер» */
+  .mounting-types {
+    margin-bottom: 50px;
+  }
