@@ -262,7 +262,6 @@ textarea:focus {
 
 .blinds__price {
   display: flex;
-  justify-content: center;
   align-items: center;
   margin-bottom: 20px;
   gap: 10px;
@@ -398,7 +397,6 @@ textarea:focus {
 .blinds-dimensions__inner {
   display: flex;
   flex-direction: column;
-  max-width: 290px;
   width: 100%;
   text-align: center;
 }
@@ -413,6 +411,7 @@ textarea:focus {
 }
 
 .blinds__price_mod {
+  justify-content: center;
   margin-top: 20px;
 }
 
@@ -467,4 +466,26 @@ textarea:focus {
 /* блок «Управление» */
 .blinds-control {
   margin-bottom: 50px;
+}
+
+/* блок «Правильный замер» */
+.taking-measurements {
+  margin-bottom: 50px;
+}
+
+.taking-measurements__description {
+  margin-top: 15px;
+}
+
+.taking-measurements__wrapper:not(:last-child),
+.taking-measurements__title {
+  margin-bottom: 15px;
+}
+
+.taking-measurements__wrapper:first-child .taking-measurements__title {
+  font-weight: 500;
+}
+
+.taking-measurements__title {
+  font-size: 14px;
 }
