@@ -382,6 +382,7 @@ textarea:focus {
 .blinds-dimensions__content ul,
 .blinds-dimensions__content ol {
   margin-bottom: 10px;
+  padding-left: 20px;
 }
 
 .blinds-dimensions__item {
@@ -412,4 +413,47 @@ textarea:focus {
 
 .blinds__price_mod {
   margin-top: 20px;
+}
+
+/* блок «Типы установки» */
+.install-types__tab-menu {
+  margin-bottom: 30px;
+}
+.install-types__tab-menu-item {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+.install-types__tab-menu-btn {
+  padding: 10px 20px;
+  border: 2px solid #3489b5;
+  border-radius: 15px;
+  font-weight: 500;
+  color: #3489b5;
+  cursor: pointer;
+  transition: .2s all;
+}
+
+.install-types__tab-menu-btn:hover {
+  -webkit-box-shadow: 0 0 8px 1px rgba(0, 170, 255, 0.4);
+  box-shadow: 0 0 8px 1px rgba(0, 170, 255, 0.4);
+}
+
+.tab-menu-btn_active {
+  background-color: #3489b5;
+  font-weight: 500;
+  color: #fff;
+}
+
+.blinds-dimensions__inner_mod {
+  height: 390px;
+}
+
+.install-option {
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: 500;
 }
