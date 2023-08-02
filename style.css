@@ -18,7 +18,7 @@ html {
 .banner {
   min-height: 500px;
   margin: 50px 0;
-  background: #e9eef2 url(img/banner/bg.jpg) no-repeat center/cover;
+  background: #e9eef2 url(/img/banner/bg.jpg) no-repeat center/cover;
 }
 
 .banner__inner {
@@ -235,6 +235,7 @@ textarea:focus {
 .blinds__text {
   max-width: 740px;
   margin: 0 auto;
+  font-weight: 500;
 }
 
 .blinds__item {
@@ -254,7 +255,7 @@ textarea:focus {
 }
 
 .blinds__product {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   font-size: 20px;
   font-weight: 600;
 }
@@ -275,6 +276,7 @@ textarea:focus {
 .new-price span {
   font-size: 25px;
   font-weight: 500;
+  line-height: .5;
   word-spacing: -4px;
   color: #0490d7;
 }
@@ -297,3 +299,117 @@ textarea:focus {
 }
 
 /* блок «Цветовая гамма» */
+.color-spectrum {
+  margin-bottom: 50px;
+}
+
+.color-spectrum__content {
+  text-align: center;
+}
+
+.color-spectrum__title {
+  font-size: 39px;
+  font-weight: 600;
+  line-height: 1.8;
+  color: #0490d7;
+}
+
+.color-spectrum__text {
+  margin-bottom: 50px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.color-spectrum__item {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.color-spectrum__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.color-spectrum__inner:first-child {
+  align-items: flex-start;
+}
+
+.color-spectrum__inner:last-child {
+  max-width: 900px;
+}
+
+.color-spectrum__img {
+  width: 100px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.color-spectrum__img p {
+  font-size: 14px;
+}
+
+/* блок «Популярные размеры деревянных жалюзи» */
+.blinds-dimensions {
+  margin-bottom: 50px;
+}
+
+.blinds-dimensions__content {
+  margin-bottom: 50px;
+}
+
+.blinds-dimensions__content .blinds-dimensions__title {
+  text-align: center;
+}
+
+.blinds-dimensions__content p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.blinds-dimensions__content p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.blinds-dimensions__title {
+  margin-bottom: 30px;
+  font-size: 39px;
+  font-weight: 500;
+  line-height: 1.8;
+  color: #0490d7;
+}
+
+.blinds-dimensions__content ul,
+.blinds-dimensions__content ol {
+  margin-bottom: 10px;
+}
+
+.blinds-dimensions__item {
+  margin-bottom: 30px;
+}
+
+.blinds-dimensions__item {
+  display: flex;
+  justify-content: space-around;
+}
+
+.blinds-dimensions__inner {
+  display: flex;
+  flex-direction: column;
+  max-width: 270px;
+  width: 100%;
+  text-align: center;
+}
+
+.blinds-dimensions__info {
+  flex-grow: 1;
+}
+
+.blinds-dimensions__info > span {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.blinds__price_mod {
+  margin-top: 20px;
+}
