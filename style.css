@@ -542,3 +542,39 @@ textarea:focus {
   .word-stages__info-link:not(:last-child) {
     margin-bottom: 5px;
   }
+
+  /* блок «Ответы на частые вопросы» */
+  .faq {
+    margin-bottom: 50px;
+  }
+
+  .faq__title {
+    margin-bottom: 40px;
+    font-size: 39px;
+    font-weight: 500;
+    color: #0490d7;
+    text-align: center;
+  }
+
+  .faq__item {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .faq__inner {
+    max-width: 400px;
+  }
+
+  .faq__inner:nth-child(-n+3) {
+    margin-bottom: 40px;
+  }
+
+  .faq__question {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 300px;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
