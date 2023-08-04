@@ -19,7 +19,7 @@ html {
   max-width: 1336px;
   min-height: 500px;
   margin: 50px auto;
-  background: #e9eef2 url(/img/banner/bg.jpg) no-repeat center/cover;
+  background: #e9eef2 url(img/banner/bg.jpg) no-repeat center/cover;
 }
 
 .banner__inner {
@@ -245,19 +245,26 @@ textarea:focus {
     padding: 50px 50px 0 50px;
   }
   .popup__inner {
-    width: 470px;
+    width: 500px;
   }
 }
 
 @media screen and (max-width: 550px) {
   .banner__inner {
-    padding: 30px 30px 30px 30px;
+    padding: 90px 30px 30px 30px;
+    text-align: center;
   }
   .banner__title {
     font-size: 25px;
   }
   .popup__inner {
-    width: 370px;
+    width: 420px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .popup__inner {
+    width: 390px;
   }
 }
 
@@ -270,7 +277,14 @@ textarea:focus {
     padding: 1rem 1.2rem;
   }
   .popup__inner {
-    width: 270px;
+    width: 290px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 530.5px) {
+  .popup__inner {
+    height: 100vh;
+    overflow: auto;
   }
 }
 
